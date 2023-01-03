@@ -255,6 +255,8 @@ img {
     line-height: 1.1;
     color: var(--caption-color);
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 72px;
 }
 
 /* Section 3 */
@@ -868,9 +870,14 @@ footer {
     .nav-links {
         display: none;
     }
-
     .contacts {
         display: none;
+    }
+    .direction-box {
+        margin-bottom: 72px;
+    }
+    .direction-box:nth-child(4) {
+        margin-bottom: 0;
     }
     .card {
         margin-bottom: 72px;
@@ -910,7 +917,6 @@ footer {
         display: flex;
         padding-top: 0;
         padding-bottom: 0;
-        justify-content: space-between;
     }
     .top-line-bg {
         display: block;
@@ -924,11 +930,8 @@ footer {
     }
     .nav {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
     .nav-links {
-        align-items: center;
         display: block;
         list-style: none;
         width: 264px;
@@ -971,16 +974,49 @@ footer {
         display: block;
     }
     .contacts {
+        padding-left: 118px;
+        margin-bottom: 10px;
         margin-top: 24px;
-        display: flex;
         width: 119px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
         flex-direction: column;
-        align-content: flex-end;
     }
     .contact {
-        padding: 2px;
+        display: block;
+        height: 16px;
         font-size: 12px;
         line-height: 0.75;
+        letter-spacing: 0.04em;
+
+    }
+        /* Section1 */
+    .direction-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .direction-box {
+        width: 356px;
+    }
+    .direction-box:nth-child(-n + 2) {
+        margin-bottom: 72px;
+    }
+        /* Section2 */
+    .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        margin: 0;
+    }
+    .card:nth-child(-n + 2) {
+        margin-bottom: 64px;
+    }
+    .card:nth-child(2n + 1) {
+        margin-right: 24px;
     }
 }
 @media screen and (max-width:1199px) {
@@ -994,14 +1030,14 @@ footer {
         padding-top: 112px;
         padding-bottom: 112px;
     }
+    .direction-text {
+    font-weight: 500;
+    }
     .direction-list-title {
         font-weight: 500;
         font-size: 36px;
         line-height: 1.1;
         color: var(--caption-color);
-    }
-    .direction-text {
-        margin-bottom: 72px;
     }
     .logo-box {
         margin-bottom: 72px;
