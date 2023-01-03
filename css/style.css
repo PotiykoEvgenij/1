@@ -849,6 +849,45 @@ footer {
 
 @media screen and (max-width:768px) {
     /* Section Customers */
+    .background-header {
+        background-color: var(--caption-color);
+        height: 432px;
+        max-width: 428px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/head-428.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .background-header {
+                background-image:
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/head-856.jpg);
+            }
+        }
+        .header {
+            text-align: center;
+            padding-top: 112px;
+            padding-bottom: 112px;
+        }
+        .header-title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.1;
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 72px;
+            width: 318px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
     .customers {
         max-width: 396px;
@@ -911,6 +950,47 @@ footer {
 
 }
 @media screen and (min-width:769px) and (max-width:1199px) {
+    .background-header {
+            background-color: var(--caption-color);
+            height: 436px;
+            max-width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image:
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/head-768.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .background-header {
+                background-image:
+                    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                    url(../images/head-1536.jpg);
+            }
+        }
+                .header {
+                    text-align: center;
+                    padding-top: 112px;
+                    padding-bottom: 112px;
+                }
+        
+                .header-title {
+                    font-weight: 700;
+                    font-size: 56px;
+                    line-height: 1.1;
+                    color: #ffffff;
+                    margin-top: 0;
+                    margin-bottom: 40px;
+                    width: 494px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
         /* Nav */
 
     .top-line {
@@ -1123,11 +1203,21 @@ footer {
         margin-right: auto;
         background-image:
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/head.jpg);
+        url(../images/head-1440.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .background-header {
+                background-image:
+                    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                    url(../images/head-2880.jpg);
+            }
+        }
     .direction-list {
         display: flex;
         justify-content: space-between;
