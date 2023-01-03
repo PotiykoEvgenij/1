@@ -975,6 +975,7 @@ footer {
         display: flex;
         width: 119px;
         flex-direction: column;
+        align-content: flex-end;
     }
     .contact {
         padding: 2px;
@@ -982,7 +983,7 @@ footer {
         line-height: 0.75;
     }
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1199px) {
     .bg-icon-direction {
         display: none;
     }
